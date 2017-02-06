@@ -15,9 +15,12 @@
 		715982A41E332CA900327798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715982A21E332CA900327798 /* LaunchScreen.storyboard */; };
 		715982AE1E332CCD00327798 /* TRZXConfirmFinancingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 715982AD1E332CCD00327798 /* TRZXConfirmFinancingViewController.m */; };
 		715982B11E332D2B00327798 /* Target_TRZXConfirmFinancing.m in Sources */ = {isa = PBXBuildFile; fileRef = 715982B01E332D2B00327798 /* Target_TRZXConfirmFinancing.m */; };
+		C4F61170A22F688FD47EAB1A /* libPods-TRZXConfirmFinancing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04387CC2CB84294255A2A574 /* libPods-TRZXConfirmFinancing.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04387CC2CB84294255A2A574 /* libPods-TRZXConfirmFinancing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXConfirmFinancing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4623B82D7E59AF8EBBBF1B86 /* Pods-TRZXConfirmFinancing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXConfirmFinancing.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXConfirmFinancing/Pods-TRZXConfirmFinancing.release.xcconfig"; sourceTree = "<group>"; };
 		715982911E332CA800327798 /* TRZXConfirmFinancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXConfirmFinancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		715982951E332CA800327798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		715982971E332CA800327798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		715982AD1E332CCD00327798 /* TRZXConfirmFinancingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXConfirmFinancingViewController.m; sourceTree = "<group>"; };
 		715982AF1E332D2B00327798 /* Target_TRZXConfirmFinancing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TRZXConfirmFinancing.h; sourceTree = "<group>"; };
 		715982B01E332D2B00327798 /* Target_TRZXConfirmFinancing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TRZXConfirmFinancing.m; sourceTree = "<group>"; };
+		ABB7D381B5002CCFA0A8444E /* Pods-TRZXConfirmFinancing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXConfirmFinancing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXConfirmFinancing/Pods-TRZXConfirmFinancing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F61170A22F688FD47EAB1A /* libPods-TRZXConfirmFinancing.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5ED92309D53C9C05232FC934 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABB7D381B5002CCFA0A8444E /* Pods-TRZXConfirmFinancing.debug.xcconfig */,
+				4623B82D7E59AF8EBBBF1B86 /* Pods-TRZXConfirmFinancing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65DA619B205E5FE1BC1A26B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04387CC2CB84294255A2A574 /* libPods-TRZXConfirmFinancing.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		715982881E332CA800327798 = {
 			isa = PBXGroup;
 			children = (
 				715982931E332CA800327798 /* TRZXConfirmFinancing */,
 				715982921E332CA800327798 /* Products */,
+				5ED92309D53C9C05232FC934 /* Pods */,
+				65DA619B205E5FE1BC1A26B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 715982A81E332CA900327798 /* Build configuration list for PBXNativeTarget "TRZXConfirmFinancing" */;
 			buildPhases = (
+				1676C680FDB017A3564C8D03 /* [CP] Check Pods Manifest.lock */,
 				7159828D1E332CA800327798 /* Sources */,
 				7159828E1E332CA800327798 /* Frameworks */,
 				7159828F1E332CA800327798 /* Resources */,
+				5C629AA2B1DC2A850A73F9AA /* [CP] Embed Pods Frameworks */,
+				D19612A4994FD2659812C834 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +190,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1676C680FDB017A3564C8D03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C629AA2B1DC2A850A73F9AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXConfirmFinancing/Pods-TRZXConfirmFinancing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D19612A4994FD2659812C834 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXConfirmFinancing/Pods-TRZXConfirmFinancing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7159828D1E332CA800327798 /* Sources */ = {
@@ -291,10 +366,12 @@
 		};
 		715982A91E332CA900327798 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABB7D381B5002CCFA0A8444E /* Pods-TRZXConfirmFinancing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 487PQPPTGA;
 				INFOPLIST_FILE = TRZXConfirmFinancing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mmwipo.com.TRZXConfirmFinancing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,10 +380,12 @@
 		};
 		715982AA1E332CA900327798 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4623B82D7E59AF8EBBBF1B86 /* Pods-TRZXConfirmFinancing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 487PQPPTGA;
 				INFOPLIST_FILE = TRZXConfirmFinancing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mmwipo.com.TRZXConfirmFinancing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +411,7 @@
 				715982AA1E332CA900327798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
