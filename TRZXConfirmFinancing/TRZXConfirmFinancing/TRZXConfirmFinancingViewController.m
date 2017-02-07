@@ -41,34 +41,20 @@
         [self.navigationController popViewControllerAnimated:YES];
     }else{
 
-        NSMutableDictionary *headers = [[NSMutableDictionary alloc]init];
-        [headers setValue:@"7d841879eb22e804e05e937c4c960889" forKey:@"token"];
-        [headers setValue:@"d8c86c8f343e4de6a9faab7e148bed63" forKey:@"userId"];
-        [headers setValue:@"iOS" forKey:@"equipment"];
-
-        // 配置请求头
-        [TRZXNetwork configHttpHeaders:headers];
-        [TRZXNetwork configWithBaseURL:@"http://api.mmwipo.com/"];
+      
 
 
 
-        [TRZXNetwork requestWithUrl:@"/api/map/city/findAllList/" params:nil isCache:YES method:GET callbackBlock:^(id response, NSError *error) {
-            
-            
+        [TRZXNetwork requestWithUrl:@"/api/map/city/findAllList/" params:nil method:GET callbackBlock:^(id response, NSError *error) {
+
             [self dismissViewControllerAnimated:YES completion:^{
                 if (self.confirmComplete) {
                     self.confirmComplete();
                 }
             }];
-            
-            
-            
+
             
         }];
-
-
-
-
 
 
 
