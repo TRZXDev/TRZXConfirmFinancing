@@ -11,6 +11,10 @@
 @interface TRZXConfirmFinancingViewController : UIViewController
 @property (nonatomic, copy) NSString *projectId;
 @property (nonatomic, copy) NSString *projectTitle;
-@property (nonatomic, copy) dispatch_block_t confirmComplete;
+//@property (nonatomic, copy) dispatch_block_t confirmComplete;
+@property (nonatomic, copy) void(^confirmComplete)(id message);
+
+
+
 
 @end

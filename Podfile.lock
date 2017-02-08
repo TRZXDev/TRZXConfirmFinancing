@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - TRZXNetwork (0.0.11):
+  - TRZXNetwork (0.0.1):
     - AFNetworking
     - YYCache
   - YYCache (1.0.4)
@@ -24,9 +24,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  TRZXNetwork: 26675c5b360e3ac1fff66f0a6539461b6cbef972
+  TRZXNetwork: 72c5a5c91855a293bbc69984b746b49e4a3170e9
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: f209f747390abca1f94cc1aaba25a9a51322f65a
+PODFILE CHECKSUM: 3ba5ba1fc62948ac05c7b9e8eaaea2edfab9c4e4
 
 COCOAPODS: 1.2.0

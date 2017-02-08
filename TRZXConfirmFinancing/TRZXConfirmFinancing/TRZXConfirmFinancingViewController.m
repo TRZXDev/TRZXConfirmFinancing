@@ -49,7 +49,7 @@
 
             [self dismissViewControllerAnimated:YES completion:^{
                 if (self.confirmComplete) {
-                    self.confirmComplete();
+                    self.confirmComplete(@"购买成功");
                 }
             }];
 

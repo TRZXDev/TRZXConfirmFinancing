@@ -16,6 +16,8 @@
     TRZXConfirmFinancingViewController *confirmFinancingVC = [[TRZXConfirmFinancingViewController alloc] init];
     confirmFinancingVC.projectId = params[@"projectId"];
     confirmFinancingVC.projectTitle = params[@"projectTitle"];
+    confirmFinancingVC.confirmComplete = params[@"completeBlock"];
+
     return confirmFinancingVC;
 }
 
